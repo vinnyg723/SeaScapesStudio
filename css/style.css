@@ -26,6 +26,18 @@
   background-size:     cover;
   padding:5px;
 }
+
+.imageSizeCnid {
+  position: relative;
+  float: left;
+  width:  475px;
+  height: 350px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  padding:5px;
+}
+
 .imageSizeEnchino {
   position: relative;
   float: left;
