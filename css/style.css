@@ -434,6 +434,7 @@ a:hover {
   z-index: 9;
   position: fixed;
   background-color: #fff;
+  width: 100%;
 }
 
 .site-navbar.transparent {
