@@ -1,3 +1,4 @@
+
 /* Base */
 .icon-twitter:hover,
 .icon-facebook:hover,
@@ -437,6 +438,7 @@ a:hover {
   width: 100%;
 }
 
+
 .site-navbar.transparent {
   background: transparent;
 }
@@ -641,7 +643,7 @@ a:hover {
 }
 
 .site-mobile-menu {
-  width: 300px;
+  width: 100%;
   position: fixed;
   right: 0;
   z-index: 2000;
