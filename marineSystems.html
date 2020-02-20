@@ -96,7 +96,7 @@
 </style>
 </head>
 
-<body>
+<body onclick="footerClose()">
 
   <div class="site-wrap">
 
@@ -1374,6 +1374,21 @@
         navbar.classList.add("sticky")
       } else {
         navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+  <script>
+    function footerClose() {
+      // $(document).ready(function () {
+      //   $("closing").click(function () {
+      //     alert($("body").hasClass("offcanvas-menu"));
+      //   });
+      // });
+      var footer = document.getElementById("footerClose");
+      if ($("body").hasClass("offcanvas-menu")) {
+        footer.style.display = "block";
+      } else {
+        footer.style.display = "none";
       }
     }
   </script>

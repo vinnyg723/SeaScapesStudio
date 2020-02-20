@@ -30,7 +30,7 @@
 
 </head>
 
-<body>
+<body onclick="footerClose()">
 
   <div class="site-wrap">
 
@@ -92,8 +92,9 @@
                       class="icon-linkedin"></span></a></li>
               </ul>
             </div>
-            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;" onclick="footerClose(); return false"><a href="#"
-                class="site-menu-toggle js-menu-toggle text-black" onclick="footerClose(); return false"><span onclick="footerClose(); return false" class="icon-menu h3"></span></a></div>
+            <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
+                class="site-menu-toggle js-menu-toggle text-black"><span id="closing" class="icon-menu h3"></span></a>
+            </div>
           </div>
         </div>
       </div>
@@ -274,11 +275,16 @@
   </div>
   <script>
     function footerClose() {
-      var x = document.getElementById("footerClose");
-      if (x.style.display === "none") {
-        x.style.display = "block";
+      // $(document).ready(function () {
+      //   $("closing").click(function () {
+      //     alert($("body").hasClass("offcanvas-menu"));
+      //   });
+      // });
+      var footer = document.getElementById("footerClose");
+      if ($("body").hasClass("offcanvas-menu")) {
+        footer.style.display = "block";
       } else {
-        x.style.display = "none";
+        footer.style.display = "none";
       }
     }
   </script>
