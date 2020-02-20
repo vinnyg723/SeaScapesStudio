@@ -112,10 +112,11 @@
                         <h1>Hydrozoa: Hydrocorals</h1>
                         <h6><strong>Body Form:</strong> The hydroid body is a 'polyp' - a tubular body with tentacles
                             attached around an opening at one end that serves as the mouth. Stinging cells called
-                            nematocysts are used to paralyze and catch prey. The body wall is thin and lacks signficant
+                            nematocysts are used to paralyze and catch prey. The body wall is thin and lacks significant
                             mesoglea - the fluid between the inner and outer body wall. Their gut lacks the infolding of
                             other Cnidarian body forms.
-                            <br><br><strong>Natural History:</strong>The hydrozoans include hydras, fire corals, lace
+                            <br><br><strong>Natural History:</strong>  <span id='dots'><button onclick='myFunction()' id='myBtn' style=>Read
+                                more</button></span> <span id='more'>The hydrozoans include hydras, fire corals, lace
                             corals, and the famous floating Portuguese Man o' War (Physalia physalis) . The fire corals
                             are one of the few non-stony corals that significantly contribute to reef-building. The
                             hydrozoans include both solitary and colonial forms. They reproduce sexually or asexually.
@@ -124,13 +125,13 @@
                             species are predatory and sting small fish, crustaceans, or other planktonic form. The sting
                             paralyzes the prey, which is then drawn into the gut and digested. Some hydrocorals use
                             zooxanthellae (Millepora) to supply well over half of their food needs, gaining the
-                            remainder from microplankton in the water. Other genera ( Distichopora, Stylaster) are
+                            remainder from microplankton in the water. Other general ( Distichopora, Stylaster) are
                             nonphotosynthetic and supply their entire nutrition from microplankton. The fire corals are
                             largely extinct and represented by only one family the Milleporidae. The Millepora often
                             appear fuzzy because their numerous small tentacles cover their skeleton. They produce a
                             potent proteinaceous toxin that is painful, hence the name "fire" coral. They are more
                             closely related to hydroids and anemones than other corals. They prefer high current and
-                            light and use light for photosynthesis.
+                            light and use light for photosynthesis.</span>
                     </div>
                 </div>
             </div>
@@ -245,7 +246,24 @@
 
 
     </div>
+<!-- Trying to fix button -->
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
 
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
     <script src="../../js/jquery-3.3.1.min.js"></script>
     <script src="../../js/jquery-migrate-3.0.1.min.js"></script>
     <script src="../../js/jquery-ui.js"></script>
