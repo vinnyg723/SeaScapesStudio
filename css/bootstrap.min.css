@@ -8847,12 +8847,12 @@ button.bg-dark:hover {
 
 .pb-3,
 .py-3 {
-    padding-bottom: .25rem !important
+    padding-bottom: 1rem !important
 }
 
 .pl-3,
 .px-3 {
-    padding-left: .25rem !important
+    padding-left: 1rem !important
 }
 
 .p-4 {

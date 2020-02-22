@@ -101,7 +101,9 @@
             </div>
 
         </header>
-
+        <div class="spacer">
+            &nbsp;
+        </div>
         <div class="site-blocks-cover overlay inner-page-cover"
             style="background-image: url('../sealifePhotos/chordates/polycarpa_aurata.jpg');"
             data-stellar-background-ratio="1">
@@ -109,7 +111,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-7 text-center text-white" data-aos="fade-up">
                         <h1>Chordates</h1>
-                        <h6><strong>Body Form:</strong> The primitive chordates have pharyngeal gill slits - slots in
+                        <h3 style="font-size: 85%;"><strong>Body Form:</strong> The primitive chordates have pharyngeal
+                            gill slits - slots in
                             the side of their neck region like those of a shark. They also have a notochord - the
                             ancestor of the vertebral column in a vertebrate. They resemble sponges or eels, depending
                             on the phylum.
@@ -117,7 +120,7 @@
                             <br><br><strong>Natural History:</strong> The primitive chordates include the sea squirts,
                             tunicates, and lancelets. Both are obscure marine animals that are related to the marine
                             vertebrates. Sea squirts and tunicates both resemble sponges and filter feed for food. The
-                            lancelets look like primitive fish with gill slits and elongated fish-like bodies.</h6>
+                            lancelets look like primitive fish with gill slits and elongated fish-like bodies.</h3>
                     </div>
                 </div>
             </div>
@@ -349,6 +352,17 @@
             }
         }
     </script>
+
+    <script>
+        function myFunction() {
+            if (window.pageYOffset >= sticky && document.body.clientWidth >= 1000) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/jquery-migrate-3.0.1.min.js"></script>
     <script src="../js/jquery-ui.js"></script>
