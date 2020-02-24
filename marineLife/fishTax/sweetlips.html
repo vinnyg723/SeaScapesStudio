@@ -53,10 +53,8 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-6 col-xl-2">
-                        <h1 class="mb-0"><a href="../../index.html" class="text-black h2 mb-0"><img
-                                    class="img-responsive" src="../../images/ssslogotrans.gif"
-                                    style="width:100%; height: auto;" alt="Image"></a>
-                        </h1>
+                        <h1 class="mb-0"><a href="../../index.html" class="text-black h2 mb-0"> <img class="img-responsive logoImg"
+                            src="../../images/ssslogotrans.gif" alt="Image" id="sssLogoID"></a></h1>
                     </div>
                     <div class="col-10 col-md-8 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
@@ -71,7 +69,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="../../aboutUs.html">About Us</a></li>
-                                <li><a href="../../signUp.html">Sign Up</a></li>
+                                <li><a href="https://visitor.constantcontact.com/manage/optin?v=001pRmNkNNhb38d-lBD5zYZwdiYQ6pqlIsR">Sign Up</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -261,6 +259,28 @@
             }
         }
     </script>
+      <script>
+
+        window.onresize = function () {
+          myFunction()
+        };
+    
+    var sssLogoID = document.getElementById("sssLogoID");
+    
+    // Get the offset position of the navbar
+    var logoResize = sssLogoID.offsetTop;
+    
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
+        sssLogoID.classList.add("logoImg")
+        sssLogoID.classList.remove("logoResizeImg");
+      } else if (window.pageYOffset >= logoResize && document.body.clientWidth <= 1200){
+        sssLogoID.classList.remove("logoImg");
+        sssLogoID.classList.add("logoResizeImg");
+      }
+    }
+      </script>
     <script src="../../js/jquery-3.3.1.min.js"></script>
     <script src="../../js/jquery-migrate-3.0.1.min.js"></script>
     <script src="../../js/jquery-ui.js"></script>
