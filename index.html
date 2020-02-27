@@ -30,7 +30,7 @@
 
 </head>
 
-<body  onclick="footerClose()">
+<body>
 
   <div class="site-wrap">
 
@@ -62,7 +62,7 @@
           </div>
           <div class="col-10 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center navbar-fixed-top" role="navigation">
-              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block" onclick="footerClose()">
                 <li><a href="index.html">Home</a></li>
                 <li class="has-children">
                   <a href="systemsLivestock.html">Systems & Livestock</a>
@@ -293,7 +293,7 @@
   <script>
 
     window.onresize = function () {
-      logoResize()
+      logoResizeFunction()
     };
 
 var sssLogoID = document.getElementById("sssLogoID");
@@ -302,7 +302,7 @@ var sssLogoID = document.getElementById("sssLogoID");
 var logoResize = sssLogoID.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function logoResize() {
+function logoResizeFunction() {
   if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
     sssLogoID.classList.add("logoImg")
     sssLogoID.classList.remove("logoResizeImg");

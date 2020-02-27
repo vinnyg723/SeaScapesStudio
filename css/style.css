@@ -18,14 +18,15 @@ ul.dropdown{
 .icon-facebook:hover,
 .icon-instagram:hover:hover,
 .icon-linkedin:hover {
-  color: #77cdf0;
+  color: #4ebde9;
 }
 
 .icon-twitter,
 .icon-facebook,
 .icon-instagram,
 .icon-linkedin {
-  color: #4196b8;
+  color: #198cb9;
+  font-size: 1.5em;
 }
 
 #more {

@@ -940,7 +940,7 @@ data-sub-html="<h6><strong>Superman, Poker Star (Montipora sp.)</strong></h6>
       <script>
 
         window.onresize = function () {
-            logoResize()
+            logoResizeFunction()
         };
     
     var sssLogoID = document.getElementById("sssLogoID");
@@ -949,7 +949,7 @@ data-sub-html="<h6><strong>Superman, Poker Star (Montipora sp.)</strong></h6>
     var logoResize = sssLogoID.offsetTop;
     
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function logoResize() {
+    function logoResizeFunction() {
       if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
         sssLogoID.classList.add("logoImg")
         sssLogoID.classList.remove("logoResizeImg");

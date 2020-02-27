@@ -100,7 +100,7 @@
 }
 
 .leftClick:hover{
-color:#77cdf0;
+color:#4ebde9;
 }
 
 .rightClick{
@@ -109,14 +109,14 @@ color:#77cdf0;
 }
 
 .rightClick:hover{
-color:#77cdf0;
+color:#4ebde9;
 }
 
 
 </style>
 </head>
 
-<body  onclick="footerClose()">
+<body>
 
   <div class="site-wrap">
 
@@ -146,7 +146,7 @@ color:#77cdf0;
           <div class="col-10 col-md-8 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
 
-              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block">
+              <ul class="site-menu js-clone-nav mx-auto d-none d-lg-block" onclick="footerClose()">
                 <li><a href="index.html">Home</a></li>
                 <li class="has-children">
                   <a href="systemsLivestock.html">Systems & Livestock</a>
@@ -1423,7 +1423,7 @@ color:#77cdf0;
     <script>
 
       window.onresize = function () {
-        myFunction()
+        logoResizeFunction()
       };
   
   var sssLogoID = document.getElementById("sssLogoID");
@@ -1432,7 +1432,7 @@ color:#77cdf0;
   var logoResize = sssLogoID.offsetTop;
   
   // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-  function myFunction() {
+  function logoResizeFunction() {
     if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
       sssLogoID.classList.add("logoImg")
       sssLogoID.classList.remove("logoResizeImg");

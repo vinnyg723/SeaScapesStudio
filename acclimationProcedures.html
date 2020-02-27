@@ -39,7 +39,7 @@
     #navbar a {
         float: left;
         display: block;
-        color: #4196b8;
+        color: #4ebde9;
         text-align: center;
         padding: 14px;
         text-decoration: none;
@@ -47,7 +47,7 @@
     }
 
     #navbar a:hover {
-        color: #265a6e;
+        color: #198cb9;
     }
 
     /* Page content */
@@ -377,7 +377,7 @@
     </script>
     <script>
         window.onresize = function () {
-            myFunction()
+            myFunctionFunction()
         };
 
         var sssLogoID = document.getElementById("sssLogoID");
@@ -386,7 +386,7 @@
         var logoResize = sssLogoID.offsetTop;
 
         // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
+        function myFunctionFunction() {
             if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
                 sssLogoID.classList.add("logoImg")
                 sssLogoID.classList.remove("logoResizeImg");
