@@ -93,7 +93,8 @@
               </ul>
             </div>
             <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#"
-                class="site-menu-toggle js-menu-toggle text-black"><span id="closing" class="icon-menu h3"  onclick="footerClose()"></span></a>
+                class="site-menu-toggle js-menu-toggle text-black"><span id="closing" class="icon-menu h3"
+                  onclick="footerClose()"></span></a>
             </div>
           </div>
         </div>
@@ -203,7 +204,7 @@
 
 
 
-  <footer class="site-footer" id="footerClose" style="display:block;">
+  <footer class="site-footer" id="footerClose">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
@@ -225,7 +226,7 @@
             <h5>Phone:</h5> <a href="tel:+13148433636">314-843-3636</a><br><br>
           </div>
           <div class="mb-2">
-            <h5>Email:</h5> <a href="mailto:joe@seascapestudio.net">joe@seascapestudio.net</a></p>
+            <h5>Email:</h5> <a href="mailto:joe@seascapestudio.net">joe@seascapestudio.net</a><br><br>
           </div>
           <div class="mb-2">
             <h3 class="footer-heading mb-4">Follow Us</h3>
@@ -236,11 +237,11 @@
               <a href="https://www.instagram.com/seascapestudio/" class="pl-3 pr-3"><span
                   class="icon-instagram"></span></a>
               <a href="https://www.linkedin.com/in/joe-faszl-27117ba/" class="pl-3 pr-3"><span
-                  class="icon-linkedin"></span></a>
+                  class="icon-linkedin"></span></a>        <br><br>
             </div>
           </div>
         </div>
-        <br>
+
         <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="row mb-2">
             <div class="col-md-12">
@@ -274,6 +275,7 @@
   </footer>
 
 
+
   </div>
   <script>
     function footerClose() {
@@ -285,8 +287,7 @@
       var footer = document.getElementById("footerClose");
       if ($("#body").hasClass("offcanvas-menu")) {
         footer.style.display = "block";
-      }
-      else {
+      } else {
         footer.style.display = "none";
       }
     }
