@@ -30,7 +30,7 @@
 </head>
 </head>
 
-<body onclick="footerClose()">
+<body>
 
     <div class="site-wrap">
 
@@ -95,8 +95,8 @@
 
                         <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3"
                             style="position: relative; top: 3px;"><a href="#"
-                                class="site-menu-toggle js-menu-toggle text-black"><span
-                                    class="icon-menu h3"></span></a></div>
+                                class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"
+                                    onclick="footerClose()"></span></a></div>
 
                     </div>
 
@@ -160,13 +160,16 @@
                             </tr>
                             <tr>
                                 <td>Conditionally:</td>
-                                <td>NH<sub>3</sub>, NO<sub>2</sub><sup>-</sup>, NO<sub>3</sub><sup>-</sup>, Ca<sup>2+</sup>, Mg<sup>2+</sup>, PO<sub>4</sub><sup>3-</sup></td>
+                                <td>NH<sub>3</sub>, NO<sub>2</sub><sup>-</sup>, NO<sub>3</sub><sup>-</sup>,
+                                    Ca<sup>2+</sup>, Mg<sup>2+</sup>, PO<sub>4</sub><sup>3-</sup></td>
                             </tr>
 
                             <tr>
                                 <td rowspan="2" style="font-weight:bold;">Reef System "New"</td>
                                 <td>Weekly:</td>
-                                <td>salinity, pH, alkalinity, NH<sub>3</sub>, NO<sub>2</sub><sup>-</sup>, NO<sub>3</sub><sup>-</sup>, Ca<sup>2+</sup>, Mg<sup>2+</sup>, PO<sub>4</sub><sup>3-</sup></td>
+                                <td>salinity, pH, alkalinity, NH<sub>3</sub>, NO<sub>2</sub><sup>-</sup>,
+                                    NO<sub>3</sub><sup>-</sup>, Ca<sup>2+</sup>, Mg<sup>2+</sup>,
+                                    PO<sub>4</sub><sup>3-</sup></td>
                             </tr>
                             <tr>
                                 <td>Conditionally:</td>
@@ -180,7 +183,9 @@
                             </tr>
                             <tr>
                                 <td>Conditionally:</td>
-                                <td>NH<sub>3</sub>, NO<sub>2</sub><sup>-</sup>, NO<sub>3</sub><sup>-</sup>, Ca<sup>2+</sup>, Mg<sup>2+</sup>, PO<sub>4</sub><sup>3-</sup>, silicate, Fe<sup>3+</sup>, Cu<sup>2+</sup>, I<sup>-</sup>, Sr<sup>2+</sup></td>
+                                <td>NH<sub>3</sub>, NO<sub>2</sub><sup>-</sup>, NO<sub>3</sub><sup>-</sup>,
+                                    Ca<sup>2+</sup>, Mg<sup>2+</sup>, PO<sub>4</sub><sup>3-</sup>, silicate,
+                                    Fe<sup>3+</sup>, Cu<sup>2+</sup>, I<sup>-</sup>, Sr<sup>2+</sup></td>
                             </tr>
                         </tbody>
                     </table>
@@ -348,16 +353,21 @@
             }
         }
     </script>
-    <!-- <script>
-        function footerClose() 
+    <script>
+        function footerClose() {
+            // $(document).ready(function () {
+            //   $("closing").click(function () {
+            //     alert($("body").hasClass("offcanvas-menu"));
+            //   });
+            // });
             var footer = document.getElementById("footerClose");
-            if ($("body").hasClass("offcanvas-menu")) {
+            if ($("#body").hasClass("offcanvas-menu")) {
                 footer.style.display = "block";
             } else {
                 footer.style.display = "none";
             }
         }
-    </script> -->
+    </script>
     <script>
         window.onload = function () {
             logoResizeFunction()
@@ -369,7 +379,7 @@
         var logoResize = sssLogoID.offsetTop;
 
         // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function  logoResizeFunction() {
+        function logoResizeFunction() {
             if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
                 sssLogoID.classList.add("logoImg")
                 sssLogoID.classList.remove("logoResizeImg");
