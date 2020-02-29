@@ -53,8 +53,9 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-6 col-xl-2">
-                        <h1 class="mb-0"><a href="../index.html" class="text-black h2 mb-0"> <img class="img-responsive logoImg"
-                            src="../images/ssslogotrans.gif" alt="Image" id="sssLogoID"></a></h1>
+                        <h1 class="mb-0"><a href="../index.html" class="text-black h2 mb-0"> <img
+                                    class="img-responsive logoImg" src="../images/ssslogotrans.gif" alt="Image"
+                                    id="sssLogoID"></a></h1>
                     </div>
                     <div class="col-10 col-md-8 d-none d-xl-block">
                         <nav class="site-navigation position-relative text-right text-lg-center" role="navigation">
@@ -69,7 +70,9 @@
                                     </ul>
                                 </li>
                                 <li><a href="../aboutUs.html">About Us</a></li>
-                                <li><a href="https://visitor.constantcontact.com/manage/optin?v=001pRmNkNNhb38d-lBD5zYZwdiYQ6pqlIsR">Sign Up</a></li>
+                                <li><a
+                                        href="https://visitor.constantcontact.com/manage/optin?v=001pRmNkNNhb38d-lBD5zYZwdiYQ6pqlIsR">Sign
+                                        Up</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -110,7 +113,8 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-7 text-center text-white" data-aos="fade-up">
                         <h1>Sponges</h1>
-                        <h3 style="font-size: 85%;"><strong>Body Form:</strong> Sponges produce spicules which are their identifying feature.
+                        <h3 style="font-size: 85%;"><strong>Body Form:</strong> Sponges produce spicules which are their
+                            identifying feature.
                             Spicules function to support their soft bodies. They also produce the universal animal
                             protein - collagen. Their bodies are porous with numerous incurrent pores and a few larger
                             excurrent pores.
@@ -435,7 +439,7 @@ Peaceful</h9><br>
 
 
 
-        <footer class="site-footer">
+        <footer class="site-footer" id="footerClose">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -457,8 +461,8 @@ Peaceful</h9><br>
                             <h5>Phone:</h5> <a href="tel:+13148433636">314-843-3636</a><br><br>
                         </div>
                         <div class="mb-2">
-                            <h5>Email:</h5> <a href="mailto:joe@seascapestudio.net">joe@seascapestudio.net</a></p>
-                        </div><br>
+                            <h5>Email:</h5> <a href="mailto:joe@seascapestudio.net">joe@seascapestudio.net</a><br><br>
+                        </div>
                         <div class="mb-2">
                             <h3 class="footer-heading mb-4">Follow Us</h3>
                             <div>
@@ -469,11 +473,11 @@ Peaceful</h9><br>
                                 <a href="https://www.instagram.com/seascapestudio/" class="pl-3 pr-3"><span
                                         class="icon-instagram"></span></a>
                                 <a href="https://www.linkedin.com/in/joe-faszl-27117ba/" class="pl-3 pr-3"><span
-                                        class="icon-linkedin"></span></a>
+                                        class="icon-linkedin"></span></a> <br><br>
                             </div>
                         </div>
                     </div>
-                    <br>
+
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <div class="row mb-2">
                             <div class="col-md-12">
@@ -504,8 +508,7 @@ Peaceful</h9><br>
                     </div>
                 </div>
             </div>
-    </div>
-    </footer>
+        </footer>
 
 
 
@@ -528,28 +531,27 @@ Peaceful</h9><br>
             }
         }
     </script>
-      <script>
-
+    <script>
         window.onresize = function () {
             logoResizeFunction()
         };
-    
-    var sssLogoID = document.getElementById("sssLogoID");
-    
-    // Get the offset position of the navbar
-    var logoResize = sssLogoID.offsetTop;
-    
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function logoResizeFunction() {
-      if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
-        sssLogoID.classList.add("logoImg")
-        sssLogoID.classList.remove("logoResizeImg");
-      } else if (window.pageYOffset >= logoResize && document.body.clientWidth <= 1200){
-        sssLogoID.classList.remove("logoImg");
-        sssLogoID.classList.add("logoResizeImg");
-      }
-    }
-      </script>
+
+        var sssLogoID = document.getElementById("sssLogoID");
+
+        // Get the offset position of the navbar
+        var logoResize = sssLogoID.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function logoResizeFunction() {
+            if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
+                sssLogoID.classList.add("logoImg")
+                sssLogoID.classList.remove("logoResizeImg");
+            } else if (window.pageYOffset >= logoResize && document.body.clientWidth <= 1200) {
+                sssLogoID.classList.remove("logoImg");
+                sssLogoID.classList.add("logoResizeImg");
+            }
+        }
+    </script>
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/jquery-migrate-3.0.1.min.js"></script>
     <script src="../js/jquery-ui.js"></script>
