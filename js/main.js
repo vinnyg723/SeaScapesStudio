@@ -1,8 +1,8 @@
-function logoResizeFunction() {
-	if (window.pageYOffset >= logoResize && document.body.clientWidth >= 400) {
+function logoResizeFunctionMobile() {
+	if (window.pageYOffset >= logoResize && document.body.clientWidth >= 450) {
 	  sssLogoID.classList.add("logoImg")
 	  sssLogoID.classList.remove("logoResizeImg");
-	} else if (window.pageYOffset >= logoResize && document.body.clientWidth <= 400) {
+	} else if (window.pageYOffset >= logoResize && document.body.clientWidth <= 450) {
 	  sssLogoID.classList.remove("logoResizeImg");
 	  sssLogoID.classList.add("logoImg");
 	}
