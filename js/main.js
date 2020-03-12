@@ -1,3 +1,16 @@
+function logoResizeFunction() {
+	if (window.pageYOffset >= logoResize && document.body.clientWidth >= 400) {
+	  sssLogoID.classList.add("logoImg")
+	  sssLogoID.classList.remove("logoResizeImg");
+	} else if (window.pageYOffset >= logoResize && document.body.clientWidth <= 400) {
+	  sssLogoID.classList.remove("logoResizeImg");
+	  sssLogoID.classList.add("logoImg");
+	}
+  }
+ 
+ 
+
+ 
  AOS.init({
  	duration: 800,
  	easing: 'slide',
