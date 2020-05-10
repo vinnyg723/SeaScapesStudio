@@ -2939,14 +2939,14 @@ fieldset:disabled a.btn {
 
 .btn-info {
     color: #fff;
-    background-color: #4ebde9;
-    border-color: #177dd1;
+    background-color: #177dd1;
+    border-color: rgb(255,127,39);
 }
 
 .btn-info:hover {
     color: #fff;
-    background-color: #177dd1;
-    border-color: #4ebde9;
+    background-color: rgb(255,127,39);
+    border-color: #177dd1;
 }
 
 .btn-info.focus,
