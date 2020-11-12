@@ -936,28 +936,7 @@ data-sub-html="<h6><strong>Superman, Poker Star (Montipora sp.)</strong></h6>
             }
         }
     </script>
-      <script>
-
-        window.onresize = function () {
-            logoResizeFunction()
-        };
-    
-    var sssLogoID = document.getElementById("sssLogoID");
-    
-    // Get the offset position of the navbar
-    var logoResize = sssLogoID.offsetTop;
-    
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function logoResizeFunction() {
-      if (window.pageYOffset >= logoResize && document.body.clientWidth >= 1200) {
-        sssLogoID.classList.add("logoImg")
-        sssLogoID.classList.remove("logoResizeImg");
-      } else if (window.pageYOffset >= logoResize && document.body.clientWidth <= 1200){
-        sssLogoID.classList.remove("logoImg");
-        sssLogoID.classList.add("logoResizeImg");
-      }
-    }
-      </script>
+     
     <script src="../../../js/jquery-3.3.1.min.js"></script>
     <script src="../../../js/jquery-migrate-3.0.1.min.js"></script>
     <script src="../../../js/jquery-ui.js"></script>
